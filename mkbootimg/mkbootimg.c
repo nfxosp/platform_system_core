@@ -67,6 +67,7 @@ int usage(void)
             "       [ --base <address> ]\n"
             "       [ --pagesize <pagesize> ]\n"
             "       [ --id ]\n"
+            "       [ --ramdisk_offset <address> ]\n"
             "       -o|--output <filename>\n"
             );
     return 1;
