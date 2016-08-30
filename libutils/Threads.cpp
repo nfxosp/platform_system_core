@@ -668,8 +668,6 @@ status_t Thread::readyToRun()
 
 status_t Thread::run(const char* name, int32_t priority, size_t stack)
 {
-    LOG_ALWAYS_FATAL_IF(name == nullptr, "thread name not provided to Thread::run");
-
     Mutex::Autolock _l(mLock);
 
     if (mRunning) {
